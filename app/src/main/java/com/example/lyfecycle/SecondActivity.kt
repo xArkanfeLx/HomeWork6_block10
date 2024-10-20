@@ -58,7 +58,6 @@ class SecondActivity : AppCompatActivity() {
     }
 
     private fun changeImage(num: Int) {
-        //imageIV.setBackgroundResource(images[num])
         imageIV.setImageResource(images[num])
         changeTextRecomendation(num)
     }

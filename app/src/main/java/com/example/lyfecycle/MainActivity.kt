@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         resultBTN=findViewById(R.id.resultBTN)
 
         resultBTN.setOnClickListener(){
-            if(sizeTextET.text.isEmpty() && massTextET.text.isEmpty()) return@setOnClickListener
+            if(sizeTextET.text.isEmpty() || massTextET.text.isEmpty()) return@setOnClickListener
             val intent = Intent(this,SecondActivity::class.java)
             val size = sizeTextET.text.toString().toFloat()/100
             val mass = massTextET.text.toString().toFloat()
