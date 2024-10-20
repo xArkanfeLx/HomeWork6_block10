@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this,SecondActivity::class.java)
             val size = sizeTextET.text.toString().toFloat()/100
             val mass = massTextET.text.toString().toFloat()
-            if(size<=0 || mass<=0) return@setOnClickListener
+            if(size<=0.0 || mass<=0.0) return@setOnClickListener
             intent.putExtra("indexMass",getIndexMass(size,mass))
             startActivity(intent)
         }
